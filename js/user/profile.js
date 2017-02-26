@@ -1,3 +1,3 @@
 define(['jquery'], function ($) {
-    console.log('profile¼ÓÔØÄ£¿é');
+    console.log('profileåŠ è½½æ¨¡å—');
 })

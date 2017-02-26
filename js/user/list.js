@@ -1,3 +1,3 @@
 define(['jquery'], function ($) {
-    console.log('list¼ÓÔØÄ£¿é');
+    console.log('liståŠ è½½æ¨¡å—');
 })
