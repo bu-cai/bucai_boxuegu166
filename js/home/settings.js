@@ -1,3 +1,6 @@
-define(['jquery'], function ($) {
-    console.log('感觉很诚恳是好事');
+define(['jquery','common','nprogress'], function ($,undefined,nprogress) {
+
+
+    //璇ラ〉闈㈡墍鏈夌殑js鍔犺浇瀹屾瘯锛岃繘搴︽潯缁撴潫
+    nprogress.done();
 })
