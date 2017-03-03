@@ -4,7 +4,7 @@ define(['jquery','jqueryCookie'], function ($) {
         $(this).next().slideToggle();
     });
 
-    // ajax请求loading
+    // ajax请求loading齿轮
     $(document).ajaxStart(function () {
         $('.overlay').show();
     }).ajaxStop(function () {

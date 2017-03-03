@@ -28,7 +28,6 @@ define(['jquery','jqueryCookie','nprogress'], function ($,undefined,nprogress) {
             type:'post',
             data: $(this).serialize(),
             success: function (data) {
-                console.log(data);
                 //如果登录成功，使用cookie的方式保存用户信息，
                 // 注意：cookie值必须为字符串，我们得到的是js对象，需要使用JSON.stringify转化为字符串
                 if( data.code == 200){
