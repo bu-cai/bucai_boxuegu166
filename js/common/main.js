@@ -2,13 +2,16 @@ requirejs.config({
     baseUrl:'/',
     paths:{
         //第三方库的路径配置
-        jquery: 'lib/jquery/jquery.min',
-        bootstrap:'lib/bootstrap/js/bootstrap.min',
+        jquery: 'node_modules/jquery/dist/jquery.min',
+        bootstrap:'node_modules/bootstrap/dist/js/bootstrap.min',
         jqueryCookie:'lib/jquery-cookie/jquery.cookie',
         nprogress:'lib/nprogress/nprogress',
-        template:'lib/artTemplate-3.0.1/template',
-        datepicker:'lib/bootstrap-datepicker/js/bootstrap-datepicker',
-        datepickerLanguage:'lib/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min',
+        template:'node_modules/art-template/dist/template', // 模板插件
+        datepicker:'lib/bootstrap-datepicker/js/bootstrap-datepicker', // 日历插件
+        datepickerLanguage:'lib/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min', //日历插件中间版
+        region:'lib/region/jquery.region',//三级联动插件
+        ckeditor:'lib/ckeditor/ckeditor',//富文本插件
+        uploadify:'lib/uploadify/jquery.uploadify.min', //头像上传的插件
         // 自己写的路径配置
         index:'js/index',
         // course
@@ -48,6 +51,12 @@ requirejs.config({
         },
         datepickerLanguage:{
             deps:['jquery','datepicker']
+        },
+        ckeditor:{
+            exports:'CKEDITOR'
+        },
+        uploadify:{
+            deps:['jquery']
         }
     }
 });
